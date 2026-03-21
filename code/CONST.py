@@ -26,3 +26,19 @@ ENTITY_SPEED = {
 
 #M
 MENU_OPTION = ('START GAME', 'EXIT GAME',)
+
+#P
+PLAYER_SPEED = {
+    'Player0': 5,
+    'Player1': 5,
+    'Player2': 5,
+    'Player3': 5,
+    'Player4': 5,
+    'Player5': 5,
+    'Player6': 5,
+    'Player7': 5,
+    'Player8': 5,
+    'Player9': 5,
+    'Player10': 5,
+    'Player11': 5,
+}

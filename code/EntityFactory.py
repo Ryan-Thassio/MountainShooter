@@ -1,4 +1,6 @@
 from code.Background import Background
+from code.Player import Player
+
 
 class EntityFactory:
 
@@ -11,5 +13,7 @@ class EntityFactory:
                     list_bg.append(Background(f'bg{i}', position))
                     list_bg.append(Background(f'bg{i}', (800, 0)))
                 return list_bg
+            case 'Player':
+                return Player('Player0', (10,228))
 
 
