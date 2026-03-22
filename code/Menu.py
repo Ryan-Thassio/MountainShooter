@@ -15,19 +15,20 @@ class Menu:
 
     def run(self, ):
         menu_option = 0
-        #pygame.mixer_music.load("./Assets/MenuMusic.mp3")
-        #pygame.mixer_music.play(-1)
+        pygame.mixer_music.load("./Assets/MenuMusic.wav")
+        pygame.mixer_music.play(-1)
+        pygame.mixer.music.set_volume(0.5)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             #Contornos:
-            self.menu_text(70, 'Shinobi', COLOR_DARKBLUE, (380, 67))
-            self.menu_text(70, 'Shinobi', COLOR_DARKBLUE, (385, 67))
-            self.menu_text(70, 'Shinobi', COLOR_DARKBLUE, (390, 67))
-            self.menu_text(70, 'Shinobi', COLOR_DARKBLUE, (395, 67))
-            self.menu_text(70, 'Shinobi', COLOR_DARKBLUE, (415, 67))
-            self.menu_text(70, 'Shinobi', COLOR_DARKBLUE, (420, 67))
-            self.menu_text(70, 'Shinobi', COLOR_DARKBLUE, (425, 67))
-            self.menu_text(70, 'Shinobi', COLOR_DARKBLUE, (395, 67))
+            self.menu_text(70, 'Ninja', COLOR_DARKBLUE, (380, 67))
+            self.menu_text(70, 'Ninja', COLOR_DARKBLUE, (385, 67))
+            self.menu_text(70, 'Ninja', COLOR_DARKBLUE, (390, 67))
+            self.menu_text(70, 'Ninja', COLOR_DARKBLUE, (395, 67))
+            self.menu_text(70, 'Ninja', COLOR_DARKBLUE, (415, 67))
+            self.menu_text(70, 'Ninja', COLOR_DARKBLUE, (420, 67))
+            self.menu_text(70, 'Ninja', COLOR_DARKBLUE, (425, 67))
+            self.menu_text(70, 'Ninja', COLOR_DARKBLUE, (395, 67))
             self.menu_text(70, 'Runner', COLOR_DARKBLUE, (415, 120))
             self.menu_text(70, 'Runner', COLOR_DARKBLUE, (420, 120))
             self.menu_text(70, 'Runner', COLOR_DARKBLUE, (425, 120))
@@ -35,7 +36,7 @@ class Menu:
             self.menu_text(70, 'Runner', COLOR_DARKBLUE, (385, 120))
             self.menu_text(70, 'Runner', COLOR_DARKBLUE, (390, 120))
 
-            self.menu_text(70, 'Shinobi', COLOR_WHITE, (400, 70))
+            self.menu_text(70, 'Ninja', COLOR_WHITE, (400, 70))
             self.menu_text(70, 'Runner', COLOR_WHITE, (400, 118))
 
             for i in range(len(MENU_OPTION)):
@@ -48,8 +49,8 @@ class Menu:
                     self.menu_text(30, MENU_OPTION[i], COLOR_WHITE,(400, 300 + 65 * i))
 
             for i in range(len(CONTROLS)):
-                self.menu_text(20, CONTROLS[i], COLOR_DARKBLUE, (698, 35 + 30 * i))
-                self.menu_text(20, CONTROLS[i], COLOR_WHITE, (700, 35 + 30 * i))
+                self.menu_text(20, CONTROLS[i], COLOR_DARKBLUE, (178, 370 + 30 * i))
+                self.menu_text(20, CONTROLS[i], COLOR_WHITE, (180, 370 + 30 * i))
 
             pygame.display.flip()
 

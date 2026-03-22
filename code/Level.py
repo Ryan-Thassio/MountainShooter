@@ -16,6 +16,8 @@ class Level:
 
 
     def run(self):
+        pygame.mixer_music.load("./Assets/LevelMusic.wav")
+        pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()
         while True:
             clock.tick(60)

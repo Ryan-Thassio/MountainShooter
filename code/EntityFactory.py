@@ -14,6 +14,6 @@ class EntityFactory:
                     list_bg.append(Background(f'bg{i}', (800, 0)))
                 return list_bg
             case 'Player':
-                return Player('Player0', (10,228))
+                return Player('Run0', (10,278))
 
 

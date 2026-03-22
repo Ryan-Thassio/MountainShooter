@@ -7,7 +7,7 @@ COLOR_DARKBLUE = 32, 21, 51
 COLOR_WHITE = 224, 242, 254
 CONTROLS = ('CONTROLES:',
             'SPACE = PULAR',
-            'ENTER = ATACAR')
+            'TECLA PARA BAIXO = ABAIXAR')
 
 #E
 ENTITY_SPEED = {
